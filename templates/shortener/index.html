@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Url Shortener</title>
+        {% load static %}
+        <script src="{% static "shortener/test.js" %}"></script>
     </head>
     <body>
-        <form method="POST">
+        <form method="POST" id="main_form">
             {% csrf_token %}
             <p>Введите ссылку для сокращения</p>
+            <p id="err_message"></p>
             <p>
-                <input type="text" name="link">
+                <input type="text" name="link" id="link">
             </p>
             <p>
                 <input type="submit" name="submit" value="Создать ссылку">

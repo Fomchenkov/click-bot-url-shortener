@@ -124,4 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static/'),
+)
+
 DOMAIN_NAME = 'http://127.0.0.1:8000/'

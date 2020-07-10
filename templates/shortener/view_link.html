@@ -5,8 +5,8 @@
         <title>Url Shortener</title>
     </head>
     <body>
-        <p>Оригинальная ссылка: <a href="{{ original_link }}">{{ original_link }}</a></p>
-        <p>Сокращенная ссылка: <a href="{{ short_link }}">{{ short_link }}</a></p>
+        <p>Оригинальная ссылка: <a target="_blank"href="{{ original_link }}">{{ original_link }}</a></p>
+        <p>Сокращенная ссылка: <a target="_blank" href="{{ short_link }}">{{ short_link }}</a></p>
         <p>Дата создания: {{ link_date }}</p>
         <p>Количество переходов: {{ view_count }}</p>
         <p><a href="{% url 'indexView' %}">На главную</a></p>
