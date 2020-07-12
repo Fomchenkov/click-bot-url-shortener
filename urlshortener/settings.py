@@ -23,10 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4vq(%0z^wu&6_&^wz9ufa9z@puuj@!^3r2@6wpu(0rpk3ledw2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
+    'vds.click-bot.ru',
+    'link.click-bot.ru',
 ]
 
 
@@ -128,4 +130,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/'),
 )
 
+# TODO: Change to real damain name
 DOMAIN_NAME = 'http://127.0.0.1:8000/'
